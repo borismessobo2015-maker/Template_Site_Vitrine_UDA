@@ -1,0 +1,135 @@
+<!-- programmes.html : Vision 2030 -->
+<!--{% include 'header.html' %}-->
+<!-- header.html : En-tête commun -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UDA - Union pour le Developpement Africain</title>
+	<!-- Bootstrap CSS CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Fichier CSS custom: à placer dans static/css/styles.css -->
+	<link rel="stylesheet" href="static/css/styles.css">
+    <style>
+        :root {--primary-color: #3E803A; --secondary-color: #FE0002; --muted:#6c757d; }
+        .brand-color{ color: var(--primary-color); }
+		.brand-bg{ background-color: var(--primary-color); }
+		.accent{ color: var(--secondary-color); }
+		.btn-accent{ background-color: var(--secondary-color); color:#fff; border: none; }
+		.btn-accent:hover{ opacity:0.9; }
+		.nav-link.active {color: var(--primary-color) !important; font-weight: 600; border-bottom: 2px solid var(--primary-color); }
+		/* Responsive tweaks */
+		.hero{ padding: 3rem 0; }
+		@media (max-width:575px){ .hero{ padding:2rem 0 } }
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+			<!-- Logo placeholder: remplace par <img src..> si disponible -->
+				<div style="width:44px;height:44px;border-radius:6px;background:var(--primary-color);display:inline-block;margin-right:8px"></div>
+				<div>
+					<div class="fw-bold brand-color">UDA Party</div>
+					<small class="text-muted">Prototype</small>
+				</div>
+			</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Présentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projet_social.html">Projet Social</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="programmes.html">Programmes 2030</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adhesion.html">Comment adhérer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+
+
+<h1 class="text-center" style="color: var(--primary-color);">Vision 2030</h1>
+<p>
+    La Vision 2030 de l’UDA définit la feuille de route stratégique pour transformer le pays dans les domaines clés :
+    éducation, santé, décentralisation, emploi des jeunes et intégration régionale.
+</p>
+
+<h3 class="mt-4">Éducation</h3>
+<p>Réformer le système éducatif, développer les compétences numériques et moderniser les infrastructures.</p>
+
+<h3 class="mt-4">Santé</h3>
+<p>Renforcer les hôpitaux publics, améliorer la couverture sanitaire et promouvoir la prévention.</p>
+
+<h3 class="mt-4">Décentralisation</h3>
+<p>Donner plus de pouvoir aux collectivités locales pour accélérer le développement.</p>
+
+<h3 class="mt-4">Emploi des Jeunes</h3>
+<p>Créer des programmes de formation, encourager l’entrepreneuriat et attirer les investissements.</p>
+
+<h3 class="mt-4">Intégration Sous-Régionale</h3>
+<p>Favoriser la coopération économique et culturelle au sein de la sous-région.</p>
+
+<!--{% include 'footer.html' %}-->
+<!-- footer.html : Pied de page commun -->
+    </div> <!-- fin container -->
+
+    <footer class="mt-5 py-4 text-white" style="background-color: var(--primary-color);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>UDA</h5>
+                    <p>Union pour le Developpement Africain</br>NUI : MOXXXXXXXXXXXXC</br>B.P. 12 XXX YAOUNDÉ, BASTOS</br>Email : contact96@uda.org</br>Téléphone : +237 6xx xx xx xx - 6xx xx xx xx</p>
+                </div>
+                <div class="col-md-5">
+                    <h5>Sitemap</h5>
+                    <ul class="list-unstyled nav-grid">
+                        <li><a href="index.html" class="text-white sitemap">Présentation</a></li>
+                        <li><a href="projet_social.html" class="text-white sitemap">Projet Social</a></li>
+                        <li><a href="programmes.html" class="text-white sitemap">Programmes 2030</a></li>
+                        <li><a href="leadership.html" class="text-white sitemap">Leadership</a></li>
+						<li><a href="adhesion.html" class="text-white sitemap">Comment adhérer</a></li>
+                        <li><a href="faq.html" class="text-white sitemap">FAQ</a></li>
+                        <li><a href="actualites.html" class="text-white sitemap">Actualités</a></li>
+                        <li><a href="contact.html" class="text-white sitemap">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex flex-column">
+                    <h5>Réseaux sociaux</h5>
+					<ul class="list-unstyled">
+
+						<li>
+							<a href="/" class="text-white" target="_blank">
+								<i class="bi bi-whatsapp"></i> Communauté WhatsApp
+							</a>
+						</li>
+						<li>
+							<a href="/" class="text-white" target="_blank">
+								<i class="bi bi-broadcast-pin"></i> Journal du parti
+							</a>
+						</li>
+						<li>
+							<a href="/" class="text-white" target="_blank">
+								<i class="bi bi-facebook"></i> Page Facebook
+							</a>
+						</li>
+					</ul>
+					<!-- Small en bas à droite uniquement -->
+					<div class="mt-auto d-flex w-100">
+						<small class="ms-auto pt-3">© 2025 UDA. Tous droits réservés.</small>
+					</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

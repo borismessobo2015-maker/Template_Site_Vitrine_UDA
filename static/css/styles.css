@@ -1,0 +1,54 @@
+/* Fichier CSS custom minimal — place le dans static/css/styles.css */
+:root{ --primary: #3E803A; --secondary: #FE0002; }
+body{ font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+a{ text-decoration: none; }
+.navbar-brand .brand-color{ color: var(--primary); }
+.btn-outline-success{ border-color: var(--primary); color:var(--primary); }
+.btn-outline-success:hover{ background: var(--primary); color:#fff; }
+
+
+/* Footer small text */
+footer small{ color:#fff; }
+
+
+/* Accessibility: focus visible */
+:focus{ outline: 3px solid rgba(62,128,58,0.2); outline-offset:2px; }
+
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 colonnes */
+    gap: 10px 1px;  /* espace horizontal et vertical */
+}
+
+.sitemap {
+	border-bottom: 1px solid #fff;
+}
+
+/*Contact box with image*/
+.contact-box {
+        background-image: url('https://picsum.photos/600/400?blur=2'); /* Placeholder */
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        overflow: hidden;
+		/* ---- Hauteur minimale définie ---- */
+        min-height: 500px; /* ajuste selon ton besoin */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-box .overlay {
+        position: absolute;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.55); /* Opacité ajustable */
+        z-index: 1;
+    }
+
+    /* Le texte passe au-dessus de l'overlay */
+    .contact-box .position-relative {
+        z-index: 2;
+    }
