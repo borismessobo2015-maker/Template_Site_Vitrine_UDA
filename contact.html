@@ -9,6 +9,8 @@
     <title>UDA - Union pour le Developpement Africain</title>
 	<!-- Bootstrap CSS CDN -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	<!-- Fichier CSS custom: à placer dans static/css/styles.css -->
 	<link rel="stylesheet" href="static/css/styles.css">
     <style>
@@ -28,7 +30,7 @@
     <!-- Barre de navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
 			<!-- Logo placeholder: remplace par <img src..> si disponible -->
 				<div style="width:44px;height:44px;border-radius:6px;background:var(--primary-color);display:inline-block;margin-right:8px"></div>
 				<div>
@@ -56,24 +58,26 @@
     <div class="container mt-4">
 
 
-<h1 class="text-center" style="color: var(--primary-color);">Contact</h1>
+<h1 class="text-center my-sm-5" style="color: var(--primary-color);font-size: 2.5rem;margin: 1.40rem 0;">Laissez-nous un message</h1>
 <small class="text-muted">
     Pour toute question, partenariat, adhésion ou demande d'information, notre équipe est disponible et réactive.
 </small>
 
-<div class="row mt-4">
+<div class="row my-5 pb-5">
     <div class="col-md-6">
-		<div class="contact-box text-white position-relative p-5 rounded shadow-sm">
+		<div class="contact-box text-white position-relative p-5 me-5 rounded shadow-sm">
 
 			<!-- Overlay sombre pour lisibilité -->
 			<div class="overlay"></div>
 
-			<h4 class="position-relative">Coordonnées</h4>
-			<p class="position-relative">Email : contact@uda.org</p>
-			<p class="position-relative">Téléphone : +237 600 000 000</p>
+			<h4 class="position-relative mb-4">Coordonnées</h4>
+            <p class="position-relative">Union pour le Developpement Africain</p>
+            <p class="position-relative">B.P. 12 XXX YAOUNDÉ, BASTOS</p>
+            <p class="position-relative">Email : contact96@uda.org</p>
+            <p class="position-relative">Téléphone : +237 6xx xx xx xx - 6xx xx xx xx</p>
 
 			<a href="https://wa.me/237600000000" 
-			   class="btn text-white position-relative" 
+			   class="btn text-white position-relative my-sm-4" 
 			   style="background-color: var(--secondary-color); width: auto; display: inline">
 				WhatsApp Direct
 			</a>
@@ -81,11 +85,11 @@
 	</div>
 
     <div class="col-md-6">
-        <h4>Formulaire rapide</h4>
+        <h4 class="mb-4" style="color: var(--primary-color);">Formulaire rapide</h4>
         <form>
-            <input type="text" class="form-control mb-2" placeholder="Votre nom">
-            <input type="email" class="form-control mb-2" placeholder="Votre email">
-            <textarea class="form-control mb-2" placeholder="Votre message"></textarea>
+            <input type="text" class="form-control mb-4" placeholder="Votre nom">
+            <input type="email" class="form-control mb-4" placeholder="Votre email">
+            <textarea class="form-control mb-4" placeholder="Votre message"></textarea>
             <button class="btn text-white" style="background-color: var(--primary-color);">Envoyer</button>
         </form>
     </div>

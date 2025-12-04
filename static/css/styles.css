@@ -27,13 +27,13 @@ footer small{ color:#fff; }
 
 /*Contact box with image*/
 .contact-box {
-        background-image: url('https://picsum.photos/600/400?blur=2'); /* Placeholder */
+        background-image: url('https://picsum.photos/600/300?blur=2'); /* Placeholder */
         background-size: cover;
         background-position: center;
         border-radius: 10px;
         overflow: hidden;
 		/* ---- Hauteur minimale définie ---- */
-        min-height: 500px; /* ajuste selon ton besoin */
+        min-height: 300px; /* ajuste selon ton besoin */
         display: flex;
         flex-direction: column;
     }
@@ -47,8 +47,106 @@ footer small{ color:#fff; }
         background: rgba(0,0,0,0.55); /* Opacité ajustable */
         z-index: 1;
     }
-
-    /* Le texte passe au-dessus de l'overlay */
+     /* Le texte passe au-dessus de l'overlay */
     .contact-box .position-relative {
         z-index: 2;
     }
+
+    .hero .overlay {
+        position: absolute;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75); /* Opacité ajustable */
+        z-index: 1;
+    }
+     /* Le texte passe au-dessus de l'overlay */
+    .hero .position-relative {
+        z-index: 2;
+    }
+   
+
+    /* Justify text in paragraphs */
+    p {
+    text-align: justify;
+    text-justify: inter-word;
+    }
+
+    /* Hero image style */
+    /*.col-lg-5 .img-hero*/
+    .hero {
+        border-radius:12px;
+        background-image: url("https://picsum.photos/1200/800?blur=2"); /* Placeholder */
+        background-size: cover;
+        background-position: center;
+        /*background:linear-gradient(135deg,var(--primary),#6fbf73);*/
+        overflow: hidden;
+		/* ---- Hauteur minimale définie ---- */
+        min-height: 400px; /* ajuste selon ton besoin */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-img {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* colonne gauche pour l'image, colonne droite pour le titre */
+    grid-template-rows: auto auto; /* 1ère ligne pour image+titre, 2ème ligne pour les paragraphes */
+    gap: 40px;
+}
+/* Image en haut à gauche */
+.text-img .image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+/* Titre en haut à droite */
+.text-img .title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.text-img .title h3 {
+    font-size: 2.5rem; /* Titre plus gros */
+    margin: 1.40rem 0; /* Espace autour du titre */
+}
+.text-img .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.title p {
+    margin: 0 0 10px 0;
+}
+
+    .text-imgd {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* colonne gauche pour l'image, colonne droite pour le titre */
+    grid-template-rows: auto auto; /* 1ère ligne pour image+titre, 2ème ligne pour les paragraphes */
+    gap: 40px;
+}
+/* Image en haut à droite */
+.text-imgd .image {
+    grid-column: 2/ 3;
+    grid-row: 1 / 2;
+}
+/* Titre en haut à gauche */
+.text-imgd .title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.text-imgd .title h3 {
+    font-size: 2.5rem; /* Titre plus gros */
+    margin: 1.40rem 0; /* Espace autour du titre */
+}
+.text-imgd .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.title p {
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 2.5rem; /* Titre plus gros */
+    /*margin: 1.40rem 0;  Espace autour du titre */
+}
